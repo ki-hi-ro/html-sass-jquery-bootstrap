@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="ページの内容を表す文章" />
+  <title>template</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+
+  <!-- fontawesome -->
+  <div class="container mt-5">
+    <h1 class="mb-3">You can use <a href="https://fontawesome.com/icons/play?style=solid" target="_blank">Font Awesome</a></h1>
+    <span class="ml-2 mr-3">something like this icon</span><i class="fas fa-play"></i>
+  </div><!-- fontawesome -->
+
+  <!-- bootstrap styling -->
+  <div class="container mt-5">
+
+    <h1 class="mb-3">You can also use Bootstrap</h1>
+    <!-- your viewport < 576px -->
+    <span class="d-inline-block mb-1">This is styled by bootstrap</span>
+    <div class="p-3 card bg-info text-white w-100 d-sm-none">Your viewport is less than 576px.</div>
+
+    <!-- 576px <= your viewport < 768px-->
+    <div class="p-3 card bg-primary text-white w-100 d-none d-sm-block d-md-none">Your viewport is 576px or higher and less than 768px.</div>
+
+    <!-- 768px <= your viewport < 992px -->
+    <div class="p-3 card text-white bg-secondary w-100 d-none d-md-block d-lg-none">Your viewport is 768px or higher and less than 992px</div>
+
+    <!-- 992px <= your viewport < 1200px -->
+    <div class="p-3 card text-white bg-success w-100 d-none d-lg-block d-xl-none">Your viewport is 992px or higher and less than 1200px</div>
+
+    <!-- 1200px < your viewport -->
+    <div class="p-3 card bg-light w-100 d-none d-xl-block">Your viewport is more than 1200px.</div>
+
+  </div><!-- bootstrap styling -->
+
+  <!-- bootstrap modal -->
+  <div class="container mt-5">
+    <h1>This modal is made by bootstrap.</h1>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      <span class="text-white">Launch demo modal</span>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" ><span class="text-white">Close</span></button>
+            <button type="button" class="btn btn-primary" class="text-white"><span class="text-white">Save changes</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- bootstrap modal -->
+
+  <div class="container mt-5 sass">
+    <h1>You can also use Sass</h1>
+    <div class="sass-img">
+      <span class="ml-1 mb-1 d-inline-block">Your viewport is less than 576px.</span>
+      <img src="assets/img/cofee.jpg" alt="cofee" class="img-fluid">
+    </div>
+    <div class="sass-img w-75">
+      <span class="ml-1 mb-1 d-inline-block">Your viewport is 576px or higher and less than 768px.</span>
+      <img src="assets/img/cofee-2.jpg" alt="cofee" class="img-fluid">
+    </div>
+    <div class="sass-img">
+      <span class="ml-1 mb-1 d-inline-block">Your viewport is 768px or higher and less than 992px</span>
+      <img src="assets/img/cofee-3.jpg" alt="cofee" class="img-fluid">
+    </div>
+    <div class="sass-img w-50">
+      <span class="ml-1 mb-1 d-inline-block">Your viewport is 992px or higher and less than 1200px</span>
+      <img src="assets/img/cofee-4.jpg" alt="cofee" class="img-fluid">
+    </div>
+    <div class="sass-img w-25">
+      <span class="ml-1 mb-1 d-inline-block">Your viewport is more than 1200px.</span>
+      <img src="assets/img/cofee-5.jpg" alt="cofee" class="img-fluid">
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6cff6feef5.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+@import "_responsive";
+
+.sass {
+  &-img {
+    &:nth-of-type(1) {
+      @include small {
+        display: none;
+      }
+    }
+    &:nth-of-type(2) {
+      display: none;
+      @include small {
+        display: block;
+      }
+      @include medium {
+        display: none;
+      }
+    }
+    &:nth-of-type(3) {
+      display: none;
+      @include medium {
+        display: block;
+      }
+      @include large {
+        display: none;
+      }
+    }
+    &:nth-of-type(4) {
+      display: none;
+      @include large {
+        display: block;
+      }
+      @include extra-large {
+        display: none;
+      }
+    }
+    &:nth-of-type(5) {
+      display: none;
+      @include extra-large {
+        display: block;
+      }
+    }
+  }
+}
